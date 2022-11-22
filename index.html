@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Website</title>
+    <script
+      defer
+      src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Background art -->
+      <div class="background-art">
+        <img src="./images/office_monochrome_2.jpg" alt="Background image" />
+      </div>
+      <!-- Header (navbar and hero sections) -->
+      <nav class="navbar">
+        <div class="nav-contents main-padding-2">
+          <p class="nav-logo">
+            <a href="#">Adrian <span>Steele</span></a>
+          </p>
+          <div class="nav-links-container">
+            <ul class="nav-text-icons">
+              <li class="nav-about">
+                <a href="#About">About</a>
+              </li>
+              <li class="nav-work">
+                <a href="#My-Work">My Work</a>
+              </li>
+              <li class="nav-tech">
+                <a href="#tech">Technologies</a>
+              </li>
+              <li class="nav-contact">
+                <a href="#Contact">Contact</a>
+              </li>
+              <li class="nav-resume">
+                <a href="/" title="External Link: PDF">Résumé</a>
+              </li>
+            </ul>
+            <div class="nav-external-links">
+              <a href="https://github.com/hyperstone6" target="_blank"
+                ><img
+                  src="./icons/github.svg"
+                  alt="Github button"
+                  class="github"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/adrian-steele"
+                target="_blank"
+                ><img
+                  src="./icons/linkedin.svg"
+                  alt="Linked button"
+                  class="linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="hero main-padding-1">
+          <h1>Hi, I'm Adrian Steele</h1>
+          <h2>Front End Developer</h2>
+          <a class="hero-btn buttons" href="#My-Work">Explore my work</a>
+        </div>
+      </header>
+      <!-- About me section -->
+      <section class="about-section" id="About">
+        <div class="image-container">
+          <img src="./images/my-pic.jpg" alt="Adrian's picture" />
+        </div>
+        <div class="about-me-subsection">
+          <h2>About Me</h2>
+          <p class="typeIt-text">
+            <span id="element"></span>
+          </p>
+          <p class="paragraph">
+            Carrying on the legacy of finding solutions for difficult problems
+            from my previous experience as a liaison between software
+            developers, corporate clients, and end-users of diverse backgrounds
+            and skill levels, it has been a passion and an entrenched habit for
+            me to seek challenges that help me grow and learn.
+            <br />
+            As a developer, I'm first and foremost committed to developing
+            myself, both personally and professionally. That's why from the
+            moment I wrote my first "Hello World" I fell in love with software
+            development. The most exciting part of developing is that the
+            learning journey never ends. There's always room for improvement,
+            just like in real life!
+          </p>
+        </div>
+      </section>
+      <!-- My projects section -->
+      <section class="my-work-section" id="My-Work">
+        <h2>My Work</h2>
+        <p>Discover my Amazing Dev Space</p>
+        <div class="project-demo">
+          <div class="furniture-store project">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./images/furniture store background.jpg"
+                alt="furniture store project image"
+              />
+            </div>
+            <div class="style-layer"></div>
+            <div class="project-items">
+              <h2 class="items-project-title">Aeki Furniture Store</h2>
+              <p class="items-description">
+                Beautifully designed, fully responsive mockup of a furniture
+                store ecommerce website with a carousel, shopping cart, zoom
+                function, search feature powered by Unsplash.com's API, language
+                toggle (English/French), saving and loading capability using the
+                browser's localStorage and sessionStorage properties.
+              </p>
+              <div class="item-btns">
+                <a
+                  href="https://adrian-aeki.vercel.app/"
+                  target="_blank"
+                  class="website buttons"
+                  >Website</a
+                >
+                <a
+                  href="https://github.com/hyperstone6/Aeki"
+                  target="_blank"
+                  class="GitHub buttons"
+                  >GitHub Page</a
+                >
+              </div>
+              <span class="project-underline"></span>
+            </div>
+          </div>
+          <div class="music-player project">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./images/music-player-project.png"
+                alt="music player project image"
+              />
+            </div>
+            <div class="style-layer"></div>
+            <div class="project-items">
+              <h2 class="items-project-title">Music Sampler</h2>
+              <p class="items-description">
+                Search for any song in Shazam's database and get up to 5 clips
+                of 1 minute and 30 second samples. The app contains play/pause,
+                previous/next features, volume rocker, repeat, mute, progress
+                bar and seeker. It also displays important information about the
+                music file including artist name, song title and album cover.
+              </p>
+              <div class="item-btns">
+                <a
+                  href="https://music-sampler.vercel.app/"
+                  target="_blank"
+                  class="website buttons"
+                  >Web App</a
+                >
+                <a
+                  href="https://drive.google.com/file/d/1xC8mrEFhOBcWV7nfXA9qNCDlgR9qfhwI/view?usp=sharing"
+                  target="_blank"
+                  class="website buttons"
+                  >Electron Package</a
+                >
+                <a
+                  href="https://github.com/hyperstone6/Music-Sampler-Web-App"
+                  target="_blank"
+                  class="GitHub buttons"
+                  >GitHub Page</a
+                >
+              </div>
+              <span class="project-underline"></span>
+            </div>
+          </div>
+          <div class="calc project">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./images/calc-project.png"
+                alt="calculator project image"
+              />
+            </div>
+            <div class="style-layer"></div>
+            <div class="project-items">
+              <h2 class="items-project-title">Calculator</h2>
+              <p class="items-description">
+                Calculator built for two platforms: website; accessed directly
+                through the hyperlink, and desktop app; powered by Electron.Js
+                for offline usage. You can use your keyboard's numpad to perform
+                your calculations in addition to the clickable numeric
+                interface.
+              </p>
+              <div class="item-btns">
+                <a href="/" class="website buttons">Web App</a>
+                <a href="/" class="GitHub buttons">GitHub Page</a>
+              </div>
+              <span class="project-underline"></span>
+            </div>
+          </div>
+          <div class="digital-agency project">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./images/digital-agency-project.png"
+                alt="Digital agency project image"
+              />
+            </div>
+            <div class="style-layer"></div>
+            <div class="project-items">
+              <h2 class="items-project-title">
+                Digital Agency e-Commerce Site
+              </h2>
+              <p class="items-description">
+                A modern, fully responsive, multi-purpose website with animated
+                icons, a perpetual slider, and an image gallery with animation
+                effects upon mouse hover. The site can be quickly repurposed and
+                scaled to almost any type of small e-commerce business.
+              </p>
+              <div class="item-btns">
+                <a
+                  href="https://digital-agency-henna.vercel.app/"
+                  target="_blank"
+                  class="website buttons"
+                  >Website</a
+                >
+                <a
+                  href="https://github.com/hyperstone6/Digital-Agency"
+                  target="_blank"
+                  class="GitHub buttons"
+                  >GitHub Page</a
+                >
+              </div>
+              <span class="project-underline"></span>
+            </div>
+          </div>
+          <div class="refund-tracker project">
+            <div class="project-image-container">
+              <img
+                class="project-image"
+                src="./images/refun-tracker-project.png"
+                alt="Refund tracker project image"
+              />
+            </div>
+            <div class="style-layer"></div>
+            <div class="project-items">
+              <h2 class="items-project-title">Refund Tracker App</h2>
+              <p class="items-description">
+                Built a partially-used air ticket refund calculator, since the
+                manual process of calculating refunds is a debilitating, time
+                consuming and highly error-prone endeavor. The app is designed
+                to be used with the Amadeus platform (a ticketing platform used
+                as a cornerstone technology by as much as 50% of the world's
+                airlines and travel agencies).
+              </p>
+              <div class="item-btns">
+                <a
+                  href="https://refund-tracker.vercel.app/"
+                  target="_blank"
+                  class="website buttons"
+                  >Web App</a
+                >
+                <a 
+                href="https://github.com/hyperstone6/Refund-Tracker" 
+                target="_blank"
+                class="GitHub buttons">GitHub Page</a>
+              </div>
+              <span class="project-underline"></span>
+            </div>
+          </div>
+          <button class="next btn"></button>
+          <button class="prev btn"></button>
+        </div>
+      </section>
+      <!-- Technologies I've worked with section -->
+      <section class="technologies-section" id="tech">
+        <h2 class="tech-header">
+          My Skills
+        </h2>
+        <div title="HTML" class="tech-icons-gallery">
+          <div class="tech-icon">
+            <img src="./icons/tech-icons/html.png" alt="HTML logo">
+          </div>
+          <div title="CSS" class="tech-icon">
+            <img src="./icons/tech-icons/css3.png" alt="CSS logo">
+          </div>
+          <div title="JavaScript" class="tech-icon">
+            <img src="./icons/tech-icons/javascript.png" alt="Javascript logo">
+          </div>
+          <div title="React.js" class="tech-icon">
+            <img src="./icons/tech-icons/reactjs.png" alt="React logo">
+          </div>
+          <div title="Node.js" class="tech-icon">
+            <img src="./icons/tech-icons/nodejs.png" alt="Node logo">
+          </div>
+          <div title="NPM" class="tech-icon">
+            <img src="./icons/tech-icons/npm.png" alt="npm logo">
+          </div>
+          <div title="Express.js" class="tech-icon">
+            <img src="./icons/tech-icons/expressjs.png" alt="Express logo">
+          </div>
+          <div title="REST APIs" class="tech-icon">
+            <img src="./icons/tech-icons/REST.png" alt="rest logo">
+          </div>
+          <div title="Socket.io" class="tech-icon">
+            <img src="./icons/tech-icons/socket.io.png" alt="Socket.io logo">
+          </div>
+          <div title="Sassy CSS" class="tech-icon">
+            <img src="./icons/tech-icons/sass.png" alt="Sass logo">
+          </div>
+          <div title="Bootstrap" class="tech-icon">
+            <img src="./icons/tech-icons/Bootstrap.png" alt="Bootstrap logo">
+          </div>
+          <div title="Bulma" class="tech-icon">
+            <img src="./icons/tech-icons/bulma.png" alt="Bulma logo">
+          </div>
+          <div title="VS Code" class="tech-icon">
+            <img src="./icons/tech-icons/vs-code.png" alt="vs code logo">
+          </div>
+          <div title="Git" class="tech-icon">
+            <img src="./icons/tech-icons/git.png" alt="git logo">
+          </div>
+          <div title="GitHub" class="tech-icon">
+            <img src="./icons/tech-icons/github.png" alt="Github logo">
+          </div>
+          <div title="Figma" class="tech-icon">
+            <img src="./icons/tech-icons/figma.png" alt="Figma logo">
+          </div>
+        </div>
+      </section>
+      <!-- Contact me section -->
+      <section class="contact-me-section" id="Contact">
+
+      </section>
+      <!-- footer section -->
+      <footer class="footer-section">
+        <div class="copyright">
+          <p>&copy;2022 Adrian Steele</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
