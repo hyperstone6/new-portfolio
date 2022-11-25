@@ -29,39 +29,50 @@
           <p class="nav-logo">
             <a href="#">Adrian <span>Steele</span></a>
           </p>
-          <div class="nav-links-container">
-            <ul class="nav-text-icons">
-              <li class="nav-about">
-                <a href="#About">About</a>
-              </li>
-              <li class="nav-work">
-                <a href="#My-Work">My Work</a>
-              </li>
-              <li class="nav-tech">
-                <a href="#tech">Technologies</a>
-              </li>
-              <li class="nav-contact">
-                <a href="#Contact">Contact</a>
-              </li>
-              <li class="nav-resume">
-                <a href="/" title="External Link: PDF">Résumé</a>
-              </li>
-            </ul>
-            <div class="nav-external-links">
-              <a href="https://github.com/hyperstone6" target="_blank"
-                ><img
-                  src="./icons/github.svg"
-                  alt="Github button"
-                  class="github"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/adrian-steele"
-                target="_blank"
-                ><img
-                  src="./icons/linkedin.svg"
-                  alt="Linked button"
-                  class="linkedin"
-              /></a>
+          <div class="hamburger-bar">
+            <input type="checkbox" name="hamburger" class="hamburger-button" />
+            <span class="hamburger-lines line-1"></span>
+            <span class="hamburger-lines line-2"></span>
+            <span class="hamburger-lines line-3"></span>
+            <div class="nav-links-container">
+              <ul class="nav-text-icons">
+                <li class="nav-about">
+                  <a href="#About">About</a>
+                </li>
+                <li class="nav-work">
+                  <a href="#My-Work">My Work</a>
+                </li>
+                <li class="nav-tech">
+                  <a href="#tech">Technologies</a>
+                </li>
+                <li class="nav-contact">
+                  <a href="#Contact">Contact</a>
+                </li>
+                <li class="nav-resume">
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1siDXoz-_MJPF94PyPeQWfauEPyYoHXoY/view?usp=sharing"
+                    title="External Link (PDF)"
+                    >R&#233;sum&#233;</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-external-links">
+                <a href="https://github.com/hyperstone6" target="_blank"
+                  ><img
+                    src="./icons/github.svg"
+                    alt="Github button"
+                    class="github"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/adrian-steele"
+                  target="_blank"
+                  ><img
+                    src="./icons/linkedin.svg"
+                    alt="Linked button"
+                    class="linkedin"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -110,7 +121,7 @@
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./images/furniture store background.jpg"
+                src="./images/furniture-store-background.jpg"
                 alt="furniture store project image"
               />
             </div>
@@ -286,7 +297,7 @@
       <!-- Technologies I've worked with section -->
       <section class="technologies-section" id="tech">
         <div class="tech-header">
-          <h2  class="section-title">My Skills</h2>
+          <h2 class="section-title">My Skills</h2>
           <span>(so far)</span>
         </div>
         <div title="HTML" class="tech-icons-gallery">
@@ -349,30 +360,43 @@
           <div class="contact-image-container">
             <img src="./images/enhanced-final-crop.png" alt="Adrian's image" />
           </div>
-          <h2  class="section-title">Let's talk!</h2>
+          <h2 class="section-title">Let's talk!</h2>
           <ul class="contact-info-list">
             <li>
-              <img src="./icons/contact-icons/location.svg" alt="location icon">
+              <img
+                src="./icons/contact-icons/location.svg"
+                alt="location icon"
+              />
               <p>Toronto, Ontario</p>
             </li>
             <li>
-              <img src="./icons/contact-icons/phone.svg" alt="phone icon">
+              <img src="./icons/contact-icons/phone.svg" alt="phone icon" />
               <a href="tel:+14383645017">+1 (438) 364 5017</a>
             </li>
             <li>
-              <img src="./icons/contact-icons/email.svg" alt="email icon">
-              <a href="mailto:steeleadrian22@gmail.com">steeleadrian22@gmail.com</a>
+              <img src="./icons/contact-icons/email.svg" alt="email icon" />
+              <a href="mailto:steeleadrian22@gmail.com"
+                >steeleadrian22@gmail.com</a
+              >
             </li>
             <li>
-              <img src="./icons/contact-icons/linkedin.svg" alt="linkedin icon">
-              <a href="https://www.linkedin.com/in/adrian-steele">in/adrian-steele</a>
+              <img
+                src="./icons/contact-icons/linkedin.svg"
+                alt="linkedin icon"
+              />
+              <a href="https://www.linkedin.com/in/adrian-steele"
+                >in/adrian-steele</a
+              >
             </li>
             <li>
-              <img src="./icons/contact-icons/github.svg" alt="github icon">
-              <a href="https://github.com/hyperstone6">github.com/hyperstone6</a>
+              <img src="./icons/contact-icons/github.svg" alt="github icon" />
+              <a href="https://github.com/hyperstone6">/hyperstone6</a>
             </li>
             <li>
-              <img src="./icons/contact-icons/internet.svg" alt="website icon">
+              <img
+                src="./icons/contact-icons/internet.svg"
+                alt="website icon"
+              />
               <a href="/">adriansteele-portfolio.com</a>
             </li>
           </ul>
@@ -409,7 +433,6 @@
             <input
               class="contact-inputs"
               type="text"
-              class=""
               name="subject"
               id="subject"
               minlength="3"

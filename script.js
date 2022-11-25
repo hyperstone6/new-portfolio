@@ -8,6 +8,38 @@ document.addEventListener("scroll", () => {
   }
 });
 
+const hamburgerBtn = document.querySelector(".hamburger-button");
+
+const toggleMenu = (e) => {
+  if (e.target.checked) {
+    e.target.parentElement.children[4].classList.remove("nav-links-container");
+    e.target.parentElement.children[4].classList.add("nav-links-active");
+  } else {
+    e.target.parentElement.children[4].classList.add("nav-links-container");
+    e.target.parentElement.children[4].classList.remove("nav-links-active");
+  }
+};
+
+function closeMenu(e) {
+  let containsActiveClass = false;
+  let reviewNode = e.target;
+  while (reviewNode.nodeName !== 'BODY') {
+    if (reviewNode.classList.contains('hamburger-button')) {
+      containsActiveClass = true;
+      break;
+    } 
+    reviewNode = reviewNode.parentNode;
+  } 
+  if (containsActiveClass === false) {
+    hamburgerBtn.parentElement.children[4].classList.remove("nav-links-active");
+    hamburgerBtn.parentElement.children[4].classList.add("nav-links-container");
+    hamburgerBtn.checked = false
+  }
+}
+document.body.addEventListener('click', closeMenu, false);
+
+hamburgerBtn.addEventListener("click", toggleMenu);
+
 // Automatic typing effect logic
 document.addEventListener("DOMContentLoaded", () => {
   new TypeIt("#element", {
