@@ -60,9 +60,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }).go();
 });
 
-let position;
 // Next and previous toggle buttons for the slider
+let position;
+const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
+
 const projects = Array.from(document.querySelectorAll(".project"));
 nextBtn.addEventListener("click", () => {
   projects.forEach((project) => {
@@ -79,12 +81,12 @@ nextBtn.addEventListener("click", () => {
         break;
       case "translateX(-300%)":
         position.transform = "translateX(-400%)";
+        // nextBtn.style.backgroundColor = 
         break;
     }
   });
 });
 
-const prevBtn = document.querySelector(".prev");
 prevBtn.addEventListener("click", () => {
   projects.forEach((project) => {
     position = project.style;

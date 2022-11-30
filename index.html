@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the web developer Adrian Steele's portfolio website. You can find Adrian's projects and resume in this website."
+    />
     <title>Adrian Steele</title>
     <script
       defer
@@ -13,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen" href="style.css" />
     <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon" />
     <script defer src="./script.js"></script>
   </head>
@@ -26,35 +30,45 @@
       <!-- Header (navbar and hero sections) -->
       <nav class="navbar">
         <div class="nav-contents main-padding-2">
-          <p class="nav-logo">
+          <h1 class="nav-logo">
             <a href="#">Adrian <span>Steele</span></a>
-          </p>
+          </h1>
           <div class="hamburger-bar">
-            <input type="checkbox" name="hamburger" class="hamburger-button" />
+            <input
+              type="checkbox"
+              name="hamburger"
+              id="hamburger-button"
+              class="hamburger-button"
+            />
             <span class="hamburger-lines line-1"></span>
             <span class="hamburger-lines line-2"></span>
             <span class="hamburger-lines line-3"></span>
             <div class="nav-links-container">
               <ul class="nav-text-icons">
                 <li class="nav-about">
-                  <a href="#About">About</a>
+                  <a href="#About"> About </a>
                 </li>
+
                 <li class="nav-work">
-                  <a href="#My-Work">My Work</a>
+                  <a href="#My-Work"> My Work </a>
                 </li>
+
                 <li class="nav-tech">
-                  <a href="#tech">Technologies</a>
+                  <a href="#tech"> Technologies </a>
                 </li>
+
                 <li class="nav-contact">
-                  <a href="#Contact">Contact</a>
+                  <a href="#Contact"> Contact </a>
                 </li>
+
                 <li class="nav-resume">
                   <a
                     target="_blank"
                     href="https://drive.google.com/file/d/1siDXoz-_MJPF94PyPeQWfauEPyYoHXoY/view?usp=sharing"
                     title="External Link (PDF)"
-                    >R&#233;sum&#233;</a
                   >
+                    R&#233;sum&#233;
+                  </a>
                 </li>
               </ul>
               <div class="nav-external-links">
@@ -79,8 +93,8 @@
       </nav>
       <header class="header">
         <div class="hero main-padding-1">
-          <h1>Hi, I'm Adrian Steele</h1>
-          <h2>Front End Developer</h2>
+          <p class="hero-header-primary">Hi, I'm Adrian Steele</p>
+          <p class="hero-header-secondary">Front End Developer</p>
           <a class="hero-btn buttons" href="#My-Work">Explore my work</a>
         </div>
       </header>
@@ -92,7 +106,7 @@
         <div class="about-me-subsection">
           <h2 class="section-title">About Me</h2>
           <p class="typeIt-text">
-            <span id="element"></span>
+            <span id="element" aria-hidden="true"></span>
           </p>
           <p class="paragraph">
             I am an internationally experienced professional with expertise in
@@ -121,7 +135,7 @@
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./images/furniture-store-background.jpg"
+                src="./images/furniture-store-background.webp"
                 alt="furniture store project image"
               />
             </div>
@@ -156,7 +170,7 @@
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./images/music-player-project.png"
+                src="./images/music-player-project.webp"
                 alt="music player project image"
               />
             </div>
@@ -197,7 +211,7 @@
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./images/calc-project.png"
+                src="./images/calc-project.webp"
                 alt="calculator project image"
               />
             </div>
@@ -232,7 +246,7 @@
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./images/digital-agency-project.png"
+                src="./images/digital-agency-project.webp"
                 alt="Digital agency project image"
               />
             </div>
@@ -268,7 +282,7 @@
             <div class="project-image-container">
               <img
                 class="project-image"
-                src="./images/refun-tracker-project.png"
+                src="./images/refun-tracker-project.webp"
                 alt="Refund tracker project image"
               />
             </div>
@@ -300,8 +314,8 @@
               <span class="project-underline"></span>
             </div>
           </div>
-          <button class="next btn"></button>
-          <button class="prev btn"></button>
+          <button aria-label="next" class="next btn"></button>
+          <button aria-label="previous" class="prev btn"></button>
         </div>
       </section>
       <!-- Technologies I've worked with section -->
@@ -368,7 +382,7 @@
       <section class="contact-me-section" id="Contact">
         <div class="contact-final-word">
           <div class="contact-image-container">
-            <img src="./images/enhanced-final-crop.png" alt="Adrian's image" />
+            <img src="./images/enhanced-final-crop.webp" alt="Adrian's image" />
           </div>
           <h2 class="section-title">Let's talk!</h2>
           <ul class="contact-info-list">
@@ -394,13 +408,17 @@
                 src="./icons/contact-icons/linkedin.svg"
                 alt="linkedin icon"
               />
-              <a target="_blank" href="https://www.linkedin.com/in/adrian-steele"
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/adrian-steele"
                 >in/adrian-steele</a
               >
             </li>
             <li>
               <img src="./icons/contact-icons/github.svg" alt="github icon" />
-              <a target="_blank" href="https://github.com/hyperstone6">/hyperstone6</a>
+              <a target="_blank" href="https://github.com/hyperstone6"
+                >/hyperstone6</a
+              >
             </li>
             <li>
               <img
@@ -417,7 +435,9 @@
             action="https://formsubmit.co/f96e10ec36687aa31ba7d505d7a67305"
             method="POST"
           >
-            <label class="contact-labels" for="name">Your name *</label>
+            <label class="contact-labels" for="name"
+              >Your name <span aria-hidden="true">*</span></label
+            >
             <input
               class="contact-inputs"
               type="text"
@@ -429,7 +449,9 @@
               title="Required"
               placeholder="Ex. Bill Gates"
             />
-            <label class="contact-labels" for="email">Your email *</label>
+            <label class="contact-labels" for="email"
+              >Your email <span aria-hidden="true">*</span></label
+            >
             <input
               class="contact-inputs"
               type="email"
@@ -439,7 +461,9 @@
               title="Required"
               placeholder="billgates@microsoft.com"
             />
-            <label class="contact-labels" for="subject">Email subject *</label>
+            <label class="contact-labels" for="subject"
+              >Email subject <span aria-hidden="true">*</span></label
+            >
             <input
               class="contact-inputs"
               type="text"
@@ -451,7 +475,10 @@
               title="Required"
               placeholder="Job Opening!"
             />
-            <label class="contact-labels" for="text">Your message *</label>
+            <label class="contact-labels" for="text"
+              >Your message
+              <span aria-hidden="true">*</span>
+            </label>
             <textarea
               name="text"
               id="text"

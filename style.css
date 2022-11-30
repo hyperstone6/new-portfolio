@@ -24,16 +24,17 @@ body {
   --text-color-dark: 15, 25, 34;
   --text-color-dark-grey: 31, 39, 49;
 
-  --navbar-padding: 1.5rem 0;
+  --navbar-padding: 1rem 0;
+  --items-btn-padding: 1.5rem 0;
   --main-padding-1: 0 10rem;
-  --main-padding-2: 0 7rem;
+  --main-padding-2: 1.5rem 7rem;
   --main-padding-3: 0 4rem;
   --nav-text-link-padding: 0 2rem 0 0;
 
   --section-header-font-size: 3rem;
-  --font-size-1: 1.7rem;
-  --font-size-2: 1.5rem;
-  --font-size-3: 1.2rem;
+  --font-size-1: 1.8rem;
+  --font-size-2: 1.7rem;
+  --font-size-3: 1.4rem;
 
   --cubic-bezier-1: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -85,7 +86,7 @@ a {
 }
 
 .navbar {
-  padding: var(--navbar-padding);
+  /* padding: var(--navbar-padding); */
   text-transform: uppercase;
   position: fixed;
   top: 0;
@@ -135,8 +136,8 @@ a {
   justify-content: space-between;
 }
 
-.nav-text-icons > * {
-  padding: var(--nav-text-link-padding);
+.nav-text-icons li a {
+  padding: 2rem;
 }
 
 .nav-text-icons a:hover {
@@ -160,11 +161,11 @@ a {
   justify-content: center;
 }
 
-.hero h1 {
+.hero-header-primary {
   font-size: clamp(5rem, 10vw, 10rem);
 }
 
-.hero h2 {
+.hero-header-secondary {
   font-size: clamp(2rem, 5vw, 5rem);
 }
 
@@ -256,7 +257,7 @@ a {
 
 .paragraph {
   font-size: var(--font-size-2);
-  color: rgba(var(--text-color-grey), 0.6);
+  color: rgba(var(--text-color-grey), 0.8);
   line-height: 1.7;
 }
 
@@ -273,10 +274,6 @@ a {
   align-items: center;
   gap: 2rem;
   color: rgb(var(--text-color-dark));
-}
-
-.my-work-section > h2 {
-  margin-top: 8rem;
 }
 
 .my-work-section > p {
@@ -417,7 +414,7 @@ a {
 }
 
 .item-btns {
-  padding: var(--navbar-padding);
+  padding: var( --items-btn-padding);
 }
 
 .item-btns > a {
@@ -432,7 +429,7 @@ a {
 
 .items-project-title {
   font-size: var(--section-header-font-size);
-  padding: var(--navbar-padding);
+  padding: var( --items-btn-padding);
   transition: all 500ms;
 }
 
@@ -635,7 +632,7 @@ select:-webkit-autofill:focus {
   max-width: 8em;
   transition: all 500ms var(--cubic-bezier-1);
   position: relative;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 /* Footer section */
@@ -655,7 +652,7 @@ select:-webkit-autofill:focus {
 
 /* Media query <= 850px */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 55rem) {
   .hamburger-bar {
     position: relative;
     padding-right: 5rem;
@@ -725,7 +722,7 @@ select:-webkit-autofill:focus {
   }
 
   .nav-links-container {
-    transition: all 500ms;
+    transition: visibility opacity 500ms;
     visibility: hidden;
     opacity: 0;
     display: flex;
@@ -739,8 +736,13 @@ select:-webkit-autofill:focus {
     
   }
 
+  .nav-contents {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
   .nav-links-active {
-    transition: all 500ms;
+    transition: all 250ms;
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -760,16 +762,19 @@ select:-webkit-autofill:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
     width: 15rem;
     border-bottom: 1px solid rgb(var(--text-color-dark-grey), .3);
-    padding: 1rem 0;
+    position: relative;
   }
 
   .nav-text-icons li {
-    padding: 0.5rem;
     align-self: center;
     transition: all 500ms;
+    padding: 1rem 0;
+  }
+
+  .nav-text-icons li a {
+    padding: 1rem 4rem;
   }
 
   .main-padding-1 {
@@ -780,11 +785,11 @@ select:-webkit-autofill:focus {
     align-items: center;
   }
 
-  .main-padding-1 h1 {
+  .hero-header-primary {
     font-size: clamp(3rem, 5vw, 5rem);
   }
 
-  .main-padding-1 h2 {
+  .hero-header-secondary {
     font-size: clamp(1.8rem, 4vw, 4rem);
   }
 
@@ -874,5 +879,9 @@ select:-webkit-autofill:focus {
 
   .contact-info-list li {
     margin: 1rem;
+  }
+  
+  .contact-btn {
+    align-self: center;
   }
 }
