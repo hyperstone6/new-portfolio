@@ -81,7 +81,6 @@ nextBtn.addEventListener("click", () => {
         break;
       case "translateX(-300%)":
         position.transform = "translateX(-400%)";
-        // nextBtn.style.backgroundColor = 
         break;
     }
   });
