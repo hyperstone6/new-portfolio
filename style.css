@@ -414,7 +414,7 @@ a {
 }
 
 .item-btns {
-  padding: var( --items-btn-padding);
+  padding: var(--items-btn-padding);
 }
 
 .item-btns > a {
@@ -429,7 +429,7 @@ a {
 
 .items-project-title {
   font-size: var(--section-header-font-size);
-  padding: var( --items-btn-padding);
+  padding: var(--items-btn-padding);
   transition: all 500ms;
 }
 
@@ -733,7 +733,6 @@ select:-webkit-autofill:focus {
     gap: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    
   }
 
   .nav-contents {
@@ -763,7 +762,7 @@ select:-webkit-autofill:focus {
     flex-direction: column;
     justify-content: center;
     width: 15rem;
-    border-bottom: 1px solid rgb(var(--text-color-dark-grey), .3);
+    border-bottom: 1px solid rgb(var(--text-color-dark-grey), 0.3);
     position: relative;
   }
 
@@ -816,7 +815,7 @@ select:-webkit-autofill:focus {
   }
 
   .paragraph {
-    font-size: clamp(1.4rem, 1.8vw, 2.5rem);
+    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
     word-wrap: break-word;
   }
 
@@ -834,11 +833,11 @@ select:-webkit-autofill:focus {
   }
 
   .items-project-title {
-    font-size: clamp(1.8rem, 3vw, 3.5rem);
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
   }
 
   .items-description {
-    font-size: clamp(1.3rem, 1.4vw, 2rem);
+    font-size: clamp(1.8rem, 1.4vw, 2rem);
   }
 
   .item-btns {
@@ -850,7 +849,7 @@ select:-webkit-autofill:focus {
 
   .btn {
     position: absolute;
-    top: 85%;
+    top: 92%;
     transform: translateY(-50%);
   }
 
@@ -880,8 +879,45 @@ select:-webkit-autofill:focus {
   .contact-info-list li {
     margin: 1rem;
   }
-  
+
   .contact-btn {
     align-self: center;
+  }
+}
+
+@media only screen and (max-height: 30rem) {
+  .paragraph {
+    font-size: clamp(1.4rem, 1.8vw, 2.5rem);
+    word-wrap: break-word;
+  }
+
+  .items-project-title {
+    font-size: clamp(1.6rem, 2.8vw, 3.5rem);
+  }
+
+  .items-description {
+    font-size: clamp(1.3rem, 1.3vw, 2rem);
+  }
+
+  .btn {
+    position: absolute;
+    top: 85%;
+    transform: translateY(-50%);
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .item-btns {
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .btn::before {
+    height: 6rem;
+    width: 6rem;
+  }
+  .project-items {
+    padding: 0 0 8rem 0;
   }
 }
